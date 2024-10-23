@@ -1,0 +1,27 @@
+<div class="container" id="work">
+    <div class="section-heading" >
+        <h6>Mes Projets et</h6>
+        <h2>Réalisations</h2>
+    </div>
+  <div class="row gy-5 lightbox-gallery">
+    <div class="col-lg-6" *ngFor="let work of works">
+      <div class="work-box">
+        <div class="work-img">
+          <a class="px_modal"  data-bs-toggle="modal" [attr.data-bs-target]="work.modalTarget">
+            <img [src]="work.imgSrc" title="" alt="">
+          </a>
+        </div>
+        <div class="work-text">
+          <h6>{{ work.date }}</h6>
+          <h4>{{ work.title }}</h4>
+          <div class="btn-bar">
+            <a class="gallery-link" title="Read More" data-bs-toggle="modal" [attr.data-bs-target]="work.modalTarget">
+              <i class="bi-arrow-up-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

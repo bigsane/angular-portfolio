@@ -1,0 +1,108 @@
+<main class="wrapper" id="scroll-container">
+    <section id="home" spyTarget="home"  class="spy-section home-section bg-dark-subtle">
+      <app-home></app-home>
+    </section>
+
+    <section id="about" spyTarget="about" class="spy-section section about-section bg-dark-subtle">
+       <app-about></app-about>
+    </section>
+
+    <section id="school" spyTarget="school"  class="spy-section section school-section bg-dark-subtle">
+      <app-studies></app-studies>
+    </section>
+
+    <section  id="work" spyTarget="work" class="spy-section section experience-section bg-dark-subtle">
+      <app-experience></app-experience>
+    </section>
+
+
+    <section id="project" spyTarget="project" class="spy-section section work-section bg-dark-subtle">
+        <app-work></app-work>
+    </section>
+
+    <section id="contact" spyTarget="contact" class="spy-section section contact-section bg-dark-subtle">
+        <app-contact></app-contact>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-info">
+                <div class="footer-avatar">
+                    <img src="assets/img/about-banner.png" title="" alt="">
+                </div>
+                <h6>Abdourahimi SANE</h6>
+            </div>
+            <p class="copyright">© 2024 copyright all right reserved</p>
+        </div>
+    </footer>
+    <a href="#home"  id="return-to-top"><i class="bi-arrow-up-circle-fill"></i></a>
+    <!-- End Footer -->
+</main>
+
+
+  <!-- Work Modal -->
+<div *ngFor="let modal of modals">
+  <div class="modal fade" [id]="modal.id" tabindex="-1" [attr.aria-labelledby]="modal.id" aria-hidden="true">
+    <div class="modal-dialog px-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="single-blog-box">
+            <div class="single-blog-img">
+              <img [src]="modal.imgSrc" title="" alt="">
+            </div>
+            <div class="single-blog-content">
+              <h6>{{ modal.year }}</h6>
+              <h2>Client : {{ modal.client }}</h2>
+              <p>Description : {{ modal.description }}</p>
+              <p>Liste des outils utilisés : {{ modal.tools }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- END blog modal-->
+
+<!-- diplomes Modal -->
+<div *ngFor="let diploma of diplomas" class="modal fade" [id]="diploma.id" tabindex="-1" [attr.aria-labelledby]="diploma.id" aria-hidden="true">
+  <div class="modal-dialog px-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="single-blog-box">
+          <div class="single-blog-img">
+            <img [src]="diploma.imgSrc" title="" alt="">
+            <p *ngIf="diploma.secondaryImg"></p>
+            <img *ngIf="diploma.secondaryImg" [src]="diploma.secondaryImg" style="align-self: center" title="" alt="">
+            <br><br>
+            <div *ngFor="let link of diploma.links">
+              <a [href]="link.href" target="_blank">
+                <h6 style="color: #0d6efd">{{ link.label }}</h6>
+              </a>
+            </div>
+          </div>
+          <div class="single-blog-content">
+            <h6>{{ diploma.year }}</h6>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- END blog modal-->

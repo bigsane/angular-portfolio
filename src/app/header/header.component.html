@@ -1,0 +1,73 @@
+ <!-- Mob header -->
+ <div class="mob-header">
+    <div class="mob-h-left">
+        <a class="navbar-brand" href="javascript:">
+            <img class="logo-dark" title="" alt="" src="assets/img/logo.png">
+            <img class="logo-light" title="" alt="" src="assets/img/logosane.jpg">
+        </a>
+    </div>
+    <div class="mob-h-right" (clickOutside)="onClickedOutside($event)">
+        <button class="toggler-menu" [ngClass]="{'open': sidebarOpen}" (click)="toggleMenu()">
+            <span></span>
+        </button>
+    </div>
+</div>
+<!-- End -->
+<!-- Header Top -->
+<div class="header-left-fixed one-page-nav" [ngClass]="{'menu-open menu-open-desk' : sidebarOpen}">
+    <!-- Brand -->
+    <div class="logo">
+        <a class="navbar-brand" href="javascript:">
+            <img class="logo-dark" title="" alt="" src="assets/img/logo.png">
+            <img class="logo-light" title="" alt="" src="assets/img/logosane.jpg">
+        </a>
+    </div>
+    <!-- / -->
+    <ul class="main-menu">
+        <li>
+            <a class="menu-item"  spyOn="home" activeClass="active"  href="#home" (click)="fullPageScroll('home')">
+                Acceuil
+            </a>
+        </li>
+        <li>
+            <a class="menu-item" spyOn="about" activeClass="active"  href="#about" (click)="fullPageScroll('about')">
+                A propos
+            </a>
+        </li>
+        <li>
+            <a class="menu-item"  spyOn="school" activeClass="active" href="#school" (click)="fullPageScroll('school')">
+                Formations
+            </a>
+        </li>
+        <li>
+            <a class="menu-item" spyOn="work" activeClass="active"  href="#work" (click)="fullPageScroll('work')">
+                Expériences
+            </a>
+        </li>
+        <li>
+            <a class="menu-item"  spyOn="project" activeClass="active" href="#project" (click)="fullPageScroll('project')">
+                Projets
+            </a>
+        </li>
+        <li>
+            <a class="menu-item"  spyOn="contact" activeClass="active"  href="#contact" (click)="fullPageScroll('contact')">
+                Contact
+            </a>
+        </li>
+    </ul>
+    <ul class="nav social-link">
+        <li>
+            <a href="https://x.com/bigsane25" target="_blank"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/bigsane25" target="_blank"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li>
+            <a href="https://www.facebook.com/bigsane25" target="_blank"><i class="fab fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/bigsane25/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </li>
+    </ul>
+</div>
+<!-- End Header Top -->
