@@ -1,77 +1,69 @@
 <div class="container" id="about">
-    <div class="section-heading text-center text-lg-start">
-        <h2>A propos de moi</h2>
-    </div>
-    <div class="row gy-4">
-        <div class="col-lg-5">
-            <div class="about-left">
-                <div class="about-avatar">
-                    <img src="assets/img/file3.png" title="" alt="">
-                </div>
-                <h3>Abdourahimi SANE</h3>
-                <p>Dev Full Stack <span>basé en</span> Ile-De-France</p>
-                <div class="btn-bar">
-                    <a class="px-btn" href="assets/Files/CV.pdf">
-                        Télécharger mon CV <i class="bi-download"></i>
-                    </a>
-                </div>
-            </div>
+  <div class="section-heading text-center text-lg-start">
+    <h2>A propos de moi</h2>
+  </div>
+  <div class="row gy-4">
+    <div class="col-lg-5">
+      <div class="about-left">
+        <div class="about-avatar">
+          <img src="assets/img/sane1.jpg" title="" alt="">
         </div>
-        <div class="col-lg-7 ps-xl-5">
-            <div class="about-bio">
-                <p>Je Suis développeur full stack passionné avec une expérience de 4 ans dans le développement
-                  d'applications web complexes en Java et Angular. Diplômé d'un master en développement logiciel en 2021,
-                  j'ai acquis une expertise dans la conception et l'implémentation de solutions web robustes et scalables..</p>
-            </div>
-            <div class="about-contact row gx-lg-5">
-                <div class="col-sm-6">
-                    <p><i class="bi-phone"></i> <span>+33 677654238</span> </p>
-                </div>
-                <div class="col-sm-6">
-                    <p><i class="bi-person"></i> <span>Abdourahimi SANE</span> </p>
-                </div>
-                <div class="col-sm-6">
-                    <p><i class="bi-envelope"></i> <span>bigsane25@gmail.com</span> </p>
-                </div>
-                <div class="col-sm-6">
-                    <p><i class="bi-map"></i> <span>Ile-de-France , France</span> </p>
-                </div>
-            </div>
-            <div class="about-exp">
-                <div class="row gy-4">
-                    <div class="col-md-6">
-                        <div class="a-number">
-                            <h6>4 + </h6>
-                            <span>Ans<br> d' experience</span>
-                        </div>
-                        <p> Durant ma carrière, j'ai eu l'opportunité de contribuer à plusieurs projets stimulants dans
-                      des environnements agiles. J'ai notamment travaillé sur le développement de microservices, la création
-                      d'API REST et l'amélioration des performances d'applications web pour des entreprises de différents secteurs.
-                      Mon rôle m'a également permis d'encadrer des juniors et d'assurer des formations sur les bonnes pratiques de développement.</p>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="a-number">
-                            <h6>Un vaste </h6>
-                            <span>domaine de  <br>Compétences...</span>
-                        </div>
-                        <p class="lead">
-
-                        <li><strong>Front-end :</strong> Angular, HTML5, CSS3, TypeScript, Bootstrap</li>
-                        <li><strong>Back-end :</strong> Java, Spring Boot, Hibernate, API REST</li>
-                        <li><strong>Bases de données :</strong> PostgreSQL, MySQL</li>
-                        <li><strong>DevOps :</strong> Docker, Jenkins, GitLab CI/CD</li>
-                        <li><strong>Autres :</strong> Git, Jenkins, AWS</li>
-
-                        </p>
-                    </div>
-                </div>
-                <blockquote>
-                    <i class="fa-solid fa-quote-left"></i>
-                    <p>Mon objectif est de continuer à innover et à perfectionner mes compétences dans le développement
-                      full stack, tout en explorant davantage le domaine du DevOps. J'aime relever des défis techniques
-                      et trouver des solutions performantes et évolutives qui répondent aux besoins des utilisateurs finaux.</p>
-                </blockquote>
-            </div>
+        <h3>{{ name }}</h3>
+        <p>{{ title }} <span>basé en</span> {{ location }}</p>
+        <div class="btn-bar">
+          <a class="px-btn" [href]="cvLink">
+            Télécharger mon CV <i class="bi-download"></i>
+          </a>
         </div>
+      </div>
     </div>
+    <div class="col-lg-7 ps-xl-5">
+      <div class="about-bio">
+        <p>{{ bio }}</p>
+      </div>
+      <div class="about-contact row gx-lg-5">
+        <div class="col-sm-6">
+          <p><i class="bi-phone"></i> <span>{{ phone }}</span> </p>
+        </div>
+        <div class="col-sm-6">
+          <p><i class="bi-person"></i> <span>{{ name }}</span> </p>
+        </div>
+        <div class="col-sm-6">
+          <p><i class="bi-envelope"></i> <span>{{ email }}</span> </p>
+        </div>
+        <div class="col-sm-6">
+          <p><i class="bi-map"></i> <span>{{ location }}</span> </p>
+        </div>
+      </div>
+      <div class="about-exp">
+        <div class="row gy-4">
+          <div class="col-md-5">
+            <div class="a-number">
+              <h6>{{ experienceYears }} + </h6>
+              <span>Ans<br> d' experience</span>
+            </div>
+            <p>{{ careerText }}</p>
+          </div>
+          <div class="col-md-7">
+            <div class="a-number">
+              <h6>Un vaste </h6>
+              <span>domaine de <br>Compétences...</span>
+            </div>
+            <p class="lead">
+              <li><strong>Front-end :</strong> {{ skills.frontend }}</li>
+              <li><strong>Back-end :</strong> {{ skills.backend }}</li>
+              <li><strong>Bases de données :</strong> {{ skills.databases }}</li>
+              <li><strong>Méthodologies :</strong> {{ skills.methodologies }}</li>
+              <li><strong>DevOps :</strong> {{ skills.devOps }}</li>
+              <li><strong>Autres :</strong> {{ skills.other }}</li>
+            </p>
+          </div>
+        </div>
+        <blockquote>
+          <i class="fa-solid fa-quote-left"></i>
+          <p>{{ quote }}</p>
+        </blockquote>
+      </div>
+    </div>
+  </div>
 </div>
