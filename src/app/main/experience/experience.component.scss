@@ -75,3 +75,28 @@
 .tools p {
   line-height: 1.5;
 }
+/* Media Queries pour appareils mobiles */
+@media (max-width: 768px) {
+  .experience-card {
+    flex-direction: column; /* Les colonnes seront affichées en pile */
+    align-items: flex-start;
+  }
+
+  .left-column, .right-column {
+    width: 100%; /* Prend toute la largeur pour chaque colonne */
+    padding: 10px;
+  }
+
+  .company-logo {
+    width: 80px; /* Taille réduite du logo sur mobile */
+  }
+
+  .left-column h3,
+  .right-column h3 {
+    font-size: 1.2em; /* Taille du texte réduite pour s'adapter aux écrans mobiles */
+  }
+
+  .tools h4 {
+    font-size: 1em; /* Taille du texte réduite pour les outils */
+  }
+}

@@ -49,7 +49,7 @@ export class MainComponent{
   modals = [
     {
       id: 'work_1',
-      imgSrc: 'assets/img/android.jpg',
+      imgSrc: 'assets/img/snaqe.jpg',
       year: '2021',
       client: 'projet universitaire',
       description: 'le projet consiste à ...',
@@ -57,7 +57,7 @@ export class MainComponent{
     },
     {
       id: 'work_2',
-      imgSrc: 'assets/img/enploi_du_temps.jpg',
+      imgSrc: 'assets/img/emploi_temps.jpg',
       year: '2021',
       client: 'Institut de technologie de Blagnac',
       description: 'le projet consiste à ...',
@@ -65,7 +65,7 @@ export class MainComponent{
     },
     {
       id: 'work_3',
-      imgSrc: 'assets/img/enploi_du_temps.jpg',
+      imgSrc: 'assets/img/ecommerce.jpg',
       year: '2021',
       client: 'Projet universitaire',
       description: 'le projet consiste à ...',
@@ -73,7 +73,7 @@ export class MainComponent{
     },
     {
       id: 'work_4',
-      imgSrc: 'assets/img/enploi_du_temps.jpg',
+      imgSrc: 'assets/img/checkyoursmile.jpg',
       year: '2021',
       client: 'Université Toulouse III, Paul Sabatier',
       description: 'le projet consiste à ...',
@@ -81,7 +81,7 @@ export class MainComponent{
     },
     {
       id: 'work_5',
-      imgSrc: 'assets/img/enploi_du_temps.jpg',
+      imgSrc: 'assets/img/ressources.jpg',
       year: '2021',
       client: 'Université Toulouse III, Paul Sabatier',
       description: 'le projet consiste à ...',
@@ -89,7 +89,7 @@ export class MainComponent{
     },
     {
       id: 'work_6',
-      imgSrc: 'assets/img/enploi_du_temps.jpg',
+      imgSrc: 'assets/img/commande_1.jpg',
       year: '2015',
       client: 'Projet personnel',
       description: 'le projet consiste à ...',
@@ -97,7 +97,7 @@ export class MainComponent{
     },
     {
       id: 'work_7',
-      imgSrc: 'assets/img/enploi_du_temps.jpg',
+      imgSrc: 'assets/img/ecole.jpg',
       year: '2014',
       client: 'Easy Link Guinea',
       description: 'le projet consiste à ...',
