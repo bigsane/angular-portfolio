@@ -15,6 +15,13 @@ export class WorkComponent {
       lightboxTitle: 'Caption for image 1'
     },
     {
+      imgSrc: 'assets/img/ecommerce.png',
+      modalTarget: '#work_3',
+      date: '2021',
+      title: 'Application E-commerce',
+      lightboxTitle: 'Caption for image 3'
+    },
+    {
       imgSrc: 'assets/img/emploi.jpg',
       modalTarget: '#work_2',
       date: '2020',
@@ -22,16 +29,9 @@ export class WorkComponent {
       lightboxTitle: 'Caption for image 2'
     },
     {
-      imgSrc: 'assets/img/ecommerce.png',
-      modalTarget: '#work_3',
-      date: '2024',
-      title: 'Application E-commerce',
-      lightboxTitle: 'Caption for image 3'
-    },
-    {
       imgSrc: 'assets/img/checkyoursmile.png',
       modalTarget: '#work_4',
-      date: '2022',
+      date: '2019',
       title: 'Bureau d\'étude sur l\'application checkyoursmile.fr',
       lightboxTitle: 'Caption for image 4'
     },

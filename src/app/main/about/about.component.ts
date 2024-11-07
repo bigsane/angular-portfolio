@@ -13,7 +13,7 @@ export class AboutComponent {
   email = 'bigsane25@gmail.com';
   cvLink = 'assets/Files/cv_2024.pdf';
   experienceYears = 4;
-  bio = `Développeur full stack passionné, avec ${this.experienceYears} ans d'expérience dans la création
+  bio = `Développeur full stack passionné, avec ${this.experienceYears} ans d'expériences dans la création
           d'applications web complexes en Java et Angular. Titulaire d'un master en développement logiciel,
           j'excelle dans la conception et l'implémentation de solutions web robustes et évolutives.`;
 

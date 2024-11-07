@@ -4,18 +4,18 @@
         <h2>Réalisations</h2>
     </div>
   <div class="row gy-5 lightbox-gallery">
-    <div class="col-lg-6" *ngFor="let work of works">
-      <div class="work-box">
-        <div class="work-img">
-          <a class="px_modal"  data-bs-toggle="modal" [attr.data-bs-target]="work.modalTarget">
-            <img [src]="work.imgSrc" title="" alt="">
+    <div class="col-lg-3" id="workitem" *ngFor="let work of works">
+      <div class="work-box d-flex flex-column">
+        <div class="work-img w-100">
+          <a class="px_modal" data-bs-toggle="modal" [attr.data-bs-target]="work.modalTarget">
+            <img [src]="work.imgSrc" title="" alt="" class="img-fluid">
           </a>
         </div>
-        <div class="work-text">
+        <div class="work-text w-100" data-bs-toggle="modal" [attr.data-bs-target]="work.modalTarget">
           <h6>{{ work.date }}</h6>
           <h4>{{ work.title }}</h4>
           <div class="btn-bar">
-            <a class="gallery-link" title="Read More" data-bs-toggle="modal" [attr.data-bs-target]="work.modalTarget">
+            <a class="gallery-link" title="Read More">
               <i class="bi-arrow-up-right"></i>
             </a>
           </div>

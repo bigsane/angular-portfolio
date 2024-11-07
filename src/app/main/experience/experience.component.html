@@ -1,29 +1,26 @@
-<div class="container" id="experience">
+<div class="container" id="services" style="background-color: darkgray;">
   <div class="section-heading" >
     <h6>Mes Expériences</h6>
     <h2>Professionnelles</h2>
   </div>
-  <div class="experience-card" *ngFor="let experience of experiences">
-    <div class="left-column">
-      <img [src]="experience.logo" alt="{{ experience.company }} logo" class="company-logo" />
-      <h3>{{ experience.title }}</h3>
-      <p>{{ experience.company }} | {{ experience.location }}</p>
-      <p>{{ experience.startDate }} - {{ experience.endDate }}</p>
-      <span class="badge">{{ experience.type }}</span>
-
-      <!-- Outils et technologies affichés si disponibles -->
-      <div *ngIf="experience.tools && experience.tools.length > 0" class="tools">
-        <h4>Outils et technologies :</h4>
-        <p>{{ experience.tools.join(', ') }}</p>
+  <div class="row gy-4">
+    <div class="col-lg-4 col-sm-6" *ngFor="let expe of experiences">
+      <div class="blog-post">
+        <div class="blog-post-img">
+          <a class="px_modal" data-bs-toggle="modal" [attr.data-bs-target]="expe.modalTarget">
+            <img [src]="expe.image" title="" alt="">
+          </a>
+        </div>
+        <div class="blog-post-info">
+          <h6>{{ expe.year }}</h6>
+          <h2>
+            <a class="px_modal" data-bs-toggle="modal" [attr.data-bs-target]="expe.modalTarget">
+              {{ expe.title }}
+            </a>
+          </h2>
+        </div>
       </div>
-    </div>
-    <div class="right-column">
-      <h3>Context : {{ experience.context }}</h3>
-      <strong><u>Description</u> :</strong><p [innerHTML]="experience.projectDescription">{{ experience.projectDescription }}</p>
-      <p><strong><u>Tâches réalisées</u> :</strong></p>
-      <ul>
-        <li *ngFor="let task of experience.tasks" [innerHTML]="task">{{ task }}</li>
-      </ul>
     </div>
   </div>
 </div>
+

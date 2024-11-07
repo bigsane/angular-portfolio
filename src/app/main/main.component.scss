@@ -1,3 +1,52 @@
 #scroll-container {
   background-color: #441B45;
 }
+
+
+/* Styles pour la structure et les colonnes */
+.single-blog-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.single-blog-img img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+#sbc {
+  display: flex;
+  gap: 20px;
+}
+
+/* Largeur et overflow des colonnes */
+.left-column {
+  width: 25%;
+  padding-right: 10px;
+}
+
+.right-column {
+  width: 75%;
+  padding-left: 10px;
+  overflow-wrap: break-word; /* Evite le débordement de texte */
+  word-wrap: break-word;
+  hyphens: auto; /* Coupe les mots longs pour les navigateurs modernes */
+}
+
+.company-logo {
+  width: 100%;
+  height: auto;
+  max-width: 150px;
+}
+
+.tools h4 {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.modal-lg-custom {
+  max-width: 80% !important; /* Modifie la largeur du modal */
+}
+
+

@@ -25,7 +25,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" style="background-color: darkgray">
         <div class="container">
             <div class="footer-info">
                 <div class="footer-avatar">
@@ -42,9 +42,9 @@
 
 
   <!-- Work Modal -->
-<div *ngFor="let modal of modals">
-  <div class="modal fade" [id]="modal.id" tabindex="-1" [attr.aria-labelledby]="modal.id" aria-hidden="true">
-    <div class="modal-dialog px-modal">
+<div *ngFor="let work of works">
+  <div class="modal fade" [id]="work.id" tabindex="-1" [attr.aria-labelledby]="work.id" aria-hidden="true">
+    <div class="modal-dialog modal-lg-custom px-modal">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -52,14 +52,14 @@
         <div class="modal-body">
           <div class="single-blog-box">
             <div class="single-blog-img">
-              <img [src]="modal.imgSrc" title="" alt="">
+              <img [src]="work.imgSrc" title="" alt="">
             </div>
             <div class="single-blog-content">
-              <h6>{{ modal.year }}</h6>
-              <h2>Client : {{ modal.client }}</h2>
-              <p><strong>Description : </strong> {{ modal.description }}</p>
-              <p><strong>Taches : </strong>{{ modal.tasks }}</p>
-              <p><strong>Liste des outils utilisés : </strong> {{ modal.tools }}</p>
+              <h6>{{ work.year }}</h6>
+              <h2>Client : {{ work.client }}</h2>
+              <p><strong>Description : </strong> {{ work.description }}</p>
+              <p><strong>Taches : </strong>{{ work.tasks }}</p>
+              <p><strong>Liste des outils utilisés : </strong> {{ work.tools }}</p>
             </div>
           </div>
         </div>
@@ -71,12 +71,11 @@
   </div>
 </div>
 
-
 <!-- END blog modal-->
 
 <!-- diplomes Modal -->
 <div *ngFor="let diploma of diplomas" class="modal fade" [id]="diploma.id" tabindex="-1" [attr.aria-labelledby]="diploma.id" aria-hidden="true">
-  <div class="modal-dialog px-modal">
+  <div class="modal-dialog modal-lg-custom px-modal">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -101,6 +100,57 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!---Expériences modal ------>
+
+<div class="experience-card" *ngFor="let experience of experiences">
+  <div class="modal fade" [id]="experience.id" tabindex="-1" [attr.aria-labelledby]="experience.id" aria-hidden="true">
+    <div class="modal-dialog modal-lg-custom px-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="single-blog-box">
+            <!-- Image en haut du modal avec une largeur de 100% -->
+            <div class="single-blog-img">
+              <img [src]="experience.logo" title="" alt="Logo" class="img-fluid w-100">
+            </div>
+            <div id="sbc" class="single-blog-content d-flex" style="background-color: darkgray">
+              <!-- Colonne gauche -->
+              <div class="left-column col-4">
+                <h3>{{ experience.title }}</h3>
+                <p>{{ experience.company }} | {{ experience.location }}</p>
+                <p>{{ experience.startDate }} - {{ experience.endDate }}</p>
+                <span class="badge bg-primary">{{ experience.type }}</span>
+
+                <!-- Outils et technologies affichés si disponibles -->
+                <div *ngIf="experience.tools && experience.tools.length > 0" class="tools mt-3">
+                  <h4>Outils et technologies :</h4>
+                  <p>{{ experience.tools.join(', ') }}</p>
+                </div>
+              </div>
+
+              <!-- Colonne droite -->
+              <div class="right-column col-8">
+                <h4>Context : {{ experience.context }}</h4>
+                <p><strong>Description :</strong></p>
+                <p [innerHTML]="experience.projectDescription"></p>
+                <p><strong>Tâches réalisées :</strong></p>
+                <ul>
+                  <li *ngFor="let task of experience.tasks" [innerHTML]="task"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+        </div>
       </div>
     </div>
   </div>

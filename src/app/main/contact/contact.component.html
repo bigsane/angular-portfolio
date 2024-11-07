@@ -1,6 +1,6 @@
 <div class="container" id="contact">
     <div class="row gy-5">
-        <div class="col-lg-5">
+      <div class="col-lg-5">
             <div class="section-heading">
                 <h5>Contact</h5>
                 <h2>Envoyez moi un message</h2>
@@ -52,6 +52,7 @@
 
           <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" id="contact-form" method="POST">
             <div class="row gx-3 gy-4">
+              <!-- Nom et Prénom -->
               <div class="col-md-6">
                 <div class="form-group">
                   <label class="form-label">Nom et Prénom</label>
@@ -62,6 +63,7 @@
                 </div>
               </div>
 
+              <!-- Email -->
               <div class="col-md-6">
                 <div class="form-group">
                   <label class="form-label">Email</label>
@@ -72,6 +74,7 @@
                 </div>
               </div>
 
+              <!-- Sujet -->
               <div class="col-12">
                 <div class="form-group">
                   <label class="form-label">Sujet</label>
@@ -82,16 +85,18 @@
                 </div>
               </div>
 
+              <!-- Message -->
               <div class="col-md-12">
                 <div class="form-group">
                   <label class="form-label">Votre message</label>
                   <textarea formControlName="message" placeholder="Votre message *" rows="6" class="form-control"></textarea>
                   <div *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched" class="text-danger">
-                    Les message est requis.
+                    Le message est requis.
                   </div>
                 </div>
               </div>
 
+              <!-- Bouton Envoyer -->
               <div class="col-md-12">
                 <div class="send">
                   <button class="px-btn dark w-100" [disabled]="contactForm.invalid" type="submit">Envoyer le Message</button>
@@ -99,6 +104,14 @@
               </div>
             </div>
           </form>
+
+          <!-- Popin de succès -->
+          <div *ngIf="isMessageSent" class="success-message-overlay">
+            <div class="success-message">
+              Message envoyé avec succès
+            </div>
+          </div>
+
         </div>
       </div>
 
