@@ -49,162 +49,157 @@ export class MainComponent{
   works = [
     {
       id: 'work_1',
+      titre: 'Développement d\'une application Android',
       imgSrc: 'assets/img/snaqe.jpg',
       year: '2021',
-      client: 'projet universitaire',
-      description: 'le projet consiste à un challenge d\'une journée au sein du master de l\'université Paul Sabatier pour ' +
-        'développer un jeu snaqe sur android',
-      tasks: 'Installation d\'Android Studio, Analyse des fonctionalités du jeu, développement, tests fonctionels ',
-      tools: 'Android studio, java'
+      client: 'Projet universitaire',
+      description: 'Participation à un challenge d\'une journée au sein du master à l\'université Paul Sabatier pour développer un jeu de type "Snake" sur Android. Ce projet visait à mettre en pratique nos compétences en développement mobile.',
+      tasks: 'Installation d\'Android Studio, analyse des fonctionnalités du jeu, développement de l\'application, tests fonctionnels pour garantir une expérience utilisateur fluide.',
+      tools: 'Android Studio, Java'
     },
     {
       id: 'work_2',
+      titre: 'Application de gestion des emplois du temps',
       imgSrc: 'assets/img/emploi_temps.jpg',
       year: '2021',
-      client: 'Institut de technologie de Blagnac',
-      description: 'le projet consiste à dévolopper une application web qui va permettre de gérer les emplois du temps dans ' +
-        'une école, ensuite le projet pourra etre étendu sur la gestion des emplois du temps en dehors des écoles',
-      tasks: 'Analyse des besoins du client, rédaction du cahier des charges, développement et tests fonctionels ',
-      tools: 'Python, django, Gurobi optimisation'
+      client: 'Institut de Technologie de Blagnac',
+      description: 'Développement d\'une application web permettant de gérer les emplois du temps d\'une école avec possibilité d\'extension pour d\'autres institutions. L\'application optimise la création automatique des emplois du temps en fonction de divers critères.',
+      tasks: 'Recueil des besoins, rédaction du cahier des charges, optimisation de l\'algorithme de génération automatique, développement front-end et back-end, tests d\'intégration.',
+      tools: 'Python, Django, Gurobi (optimisation), méthode Agile Scrum'
     },
     {
       id: 'work_3',
+      titre: 'Application e-commerce pour la vente de vêtements',
       imgSrc: 'assets/img/ecommerce.jpg',
       year: '2021',
       client: 'Projet universitaire',
-      description: 'le projet consiste à développer une application e-commerce de vente de vetements et de la déployer sur ' +
-        'une plateforme gratuite en utilisant les outils CI-CD',
-      tasks: 'Analyse des besoins, rédaction d\'un cahier des charges, modélisation de la base de données, développement du front ,' +
-      'développement du back, mise en place des pipelines ci-cd, déploiment et test fonctionels',
-      tools: 'Spring Boot, Vue.js, Git/GitHub, GitHub Actions, heroku, hibernate, postgresql'
+      description: 'Création d\'une application e-commerce pour la vente de vêtements, intégrant des pipelines CI/CD pour le déploiement automatisé sur une plateforme cloud. Le projet a été déployé sur Heroku en utilisant Docker.',
+      tasks: 'Analyse des besoins, rédaction du cahier des charges, modélisation de la base de données, développement du front-end avec Vue.js, développement du back-end avec Spring Boot, mise en place des pipelines CI/CD, déploiement, tests fonctionnels.',
+      tools: 'Spring Boot, Vue.js, Git/GitHub, GitHub Actions, Heroku, Hibernate, PostgreSQL, Docker'
     },
     {
       id: 'work_4',
+      titre: 'Amélioration de la plateforme CheckYourSmile.fr',
       imgSrc: 'assets/img/checkyoursmile.jpg',
       year: '2021',
-      client: 'Université Toulouse III, Paul Sabatier',
-      description: 'le projet consiste à apporter des évolutions sur la plateforme checkyoursmile.fr qui est une plateforme ' +
-        'd\'apprentissate de l\'anglais à travers des jeux comme le pendu ou le flashcards par exemple.',
-      tasks: 'Développement du jeu wishpers, Ajout de nouvelles fonctionnalités aux jeux existants comme les points à gagner à coté de chaque jeu',
-      tools: 'Symfony, Bootstrap, PHP, Html'
+      client: 'Université Toulouse III - Paul Sabatier',
+      description: 'Projet d\'évolution de la plateforme CheckYourSmile.fr, une plateforme d\'apprentissage de l\'anglais à travers des jeux éducatifs comme le pendu et les flashcards. L\'objectif était d\'ajouter de nouvelles fonctionnalités pour améliorer l\'engagement des utilisateurs.',
+      tasks: 'Développement du jeu "Whispers", ajout de fonctionnalités telles que les systèmes de points et les récompenses, optimisation de l\'interface utilisateur.',
+      tools: 'Symfony, Bootstrap, PHP, HTML, CSS'
     },
     {
       id: 'work_5',
+      titre: 'Gestion des ressources universitaires',
       imgSrc: 'assets/img/ressources.jpg',
       year: '2021',
-      client: 'Université Toulouse III, Paul Sabatier',
-      description: 'le projet consiste à développer une application client lourd pour la gestion des ressources de l\'université ' +
-        'comme les capteurs des portes, la consomation d\'eau et d\'électricité, etc.',
-      tasks: 'Analyse des besoins, rédaction d\'un cahier de charges, modélisation de la base de données' +
-        'modélisation de la maquette de l\'application cliente, développement de l\'application cliente, ' +
-        'développement de l\'application serveur, interconnexion des deux applications, tests fonctionels',
-      tools: 'Java SE, Apis Sockets, MySQL, Balsamiq Mookup'
+      client: 'Université Toulouse III - Paul Sabatier',
+      description: 'Développement d\'une application client lourd pour la gestion des ressources universitaires (suivi des capteurs, consommation d\'eau et d\'électricité). L\'application permettait une surveillance centralisée des ressources sur le campus.',
+      tasks: 'Analyse des besoins, rédaction du cahier des charges, modélisation de la base de données, conception de l\'interface utilisateur, développement des modules clients et serveurs, intégration des fonctionnalités, tests fonctionnels.',
+      tools: 'Java SE, API Sockets, MySQL, Balsamiq Mockup'
     },
     {
       id: 'work_6',
+      titre: 'Application de gestion des commandes pour une boutique',
       imgSrc: 'assets/img/commande_1.jpg',
       year: '2015',
       client: 'Projet personnel',
-      description: 'le projet consiste à ...',
-      tasks: 'Développement du jeu wishpers, ',
-      tools: 'Python, django, Gurobi optimisation'
+      description: 'Création d\'une application de gestion de commandes pour une boutique. Cette application permet de gérer les clients, les fournisseurs, les produits, ainsi que les commandes effectuées, avec une interface utilisateur conviviale.',
+      tasks: 'Analyse des besoins, rédaction du cahier des charges techniques, modélisation de la base de données, conception de l\'interface graphique, développement et tests fonctionnels.',
+      tools: 'Java SE, MySQL, méthode Merise'
     },
     {
       id: 'work_7',
+      titre: 'Application de gestion d\'une pharmacie',
       imgSrc: 'assets/img/pharmacie_1.jpg',
       year: '2014',
-      client: 'Giga Technoligie',
-      description: 'le projet consiste à ...',
-      tasks: 'Développement du jeu wishpers, ',
+      client: 'Giga Technologie',
+      description: 'Développement d\'une application de gestion pour une pharmacie, incluant la gestion des stocks, des clients, des fournisseurs, et des commandes. Le projet a couvert tout le cycle de vie du développement logiciel.',
+      tasks: 'Analyse des besoins, élaboration du cahier des charges, modélisation de la base de données, conception de l\'interface utilisateur, développement des modules métiers, génération des fichiers d\'installation, tests multi-plateformes.',
       tools: 'Windev XIV, Merise'
     },
     {
       id: 'work_8',
+      titre: 'Concours de développement d\'une application scolaire',
       imgSrc: 'assets/img/ecole.jpg',
       year: '2014',
       client: 'Easy Link Guinea',
-      description: 'le projet consiste à ...',
-      tasks: 'Développement du jeu wishpers, ',
-      tools: 'Python, django, Gurobi optimisation'
+      description: 'Participation à un concours interuniversitaire de 4 mois à Conakry. Le projet consistait à développer une application de gestion scolaire, en collaboration avec une équipe de 4 étudiants, pour le suivi administratif et pédagogique.',
+      tasks: 'Recueil des besoins, rédaction du cahier des charges, modélisation de la base de données, conception de l\'interface graphique, développement des fonctionnalités principales, tests fonctionnels.',
+      tools: 'Java SE, MySQL, Merise'
     }
   ];
+
 
   experiences = [
     {
       id: 'experience_1',
-      title: 'Dévelopeur Spring/Ionic',
-      company: 'Léa association',
+      title: 'Développeur Spring/Ionic',
+      company: 'Léa Association',
       location: 'Remote',
       startDate: 'Février 2024',
-      endDate: 'Maintenant',
+      endDate: 'Présent',
       type: 'Temps partiel',
       logo: 'assets/img/lea_1.jpg',
-      context: 'Développement d\'une application mobile',
-      projectDescription: `Léa est une association qui aide les parents qui ont des enfants en situation de handicap.
-                        L'objectif est d'avoir toutes les fonctionnalités présentes sur le site internet comme :<br>
-                        • Inscription, connexion<br>
-                        • Gestion des rendez-vous avec les professionnels de santé<br>
-                        • S'inscrire à des événements<br>
-                        • Répertorier des crises`,
+      context: 'Développement d\'une application mobile pour les parents ayant des enfants en situation de handicap.',
+      projectDescription: `
+      Léa est une association dédiée à l'accompagnement des parents d'enfants en situation de handicap.
+      Le projet vise à répliquer sur une application mobile toutes les fonctionnalités existantes du site internet, telles que :<br>
+      • Inscription et connexion des utilisateurs<br>
+      • Gestion des rendez-vous avec des professionnels de santé<br>
+      • Inscription à des événements<br>
+      • Répertorier les crises et incidents.
+    `,
       tasks: [
-        'Analyse des besoins et mise en place d\'un cahier de charges technique',
-        'Modélisation de la base de données',
-        'Maquettage de l\'interface graphique',
-        'Mise en place du socle de base pour le back et le front',
-        'Développement des fonctionnalités',
-        'Déploiement sur appStore, playStore',
-        'Tests unitaires et fonctionnels'
+        'Analyse des besoins et rédaction d\'un cahier des charges technique',
+        'Conception de la base de données',
+        'Maquettage de l\'interface utilisateur avec Figma',
+        'Développement du backend en Spring Boot et du frontend avec Ionic',
+        'Déploiement sur App Store et Google Play',
+        'Réalisation de tests unitaires et fonctionnels pour validation'
       ],
       tools: [
         'Spring Boot', 'Ionic', 'Lucidchart', 'Figma', 'Hibernate', 'IntelliJ', 'WebStorm',
-        'PostgreSQL', 'MySQL', 'Heroku', 'Junit', 'Mockito'
+        'PostgreSQL', 'MySQL', 'Heroku', 'JUnit', 'Mockito'
       ]
     },
     {
       id: 'experience_2',
-      title: 'Concepteur développeur Java / Angular',
+      title: 'Concepteur Développeur Java / Angular',
       company: 'Sully Group',
       location: 'Hybride',
       startDate: '2021',
       endDate: '2024',
       type: 'Temps plein',
       logo: 'assets/img/sully_1.jpg',
-      context: 'Développement et TMA sur des projets du centre de service et consultant chez Enedis',
-      projectDescription:`
-        <p><strong>Pour le CNRS :</strong></p>
-        <p>Projet de gestion de l'ensemble des données concernant le personnel du CNRS, ses fournisseurs, ses partenaires, son annuaire, etc.<br></p>
-        <p><strong>Pour le Centre de service :</strong></p>
-        • Projet de paiement et refonte de l’application contrat achat vin, ainsi que d’autres projets pour la gestion des grains, de l’olive, du lait, etc., pour le client FranceAgriMer.<br>
-        • Sigebel gère les licences et les comptes des utilisateurs internes et externes de la direction générale de l’aviation civile.<br>
-        • Previas est un projet de prévention des infections liées aux soins et Bqa donne le bulletin quotidien des activités de Santé publique France.<br><br>
-        <p><strong>Pour Enedis :</strong></p>
-        Le projet Sikapa permet d’accueillir les acteurs du marché pour qu’ils gèrent leurs périmètres sur les mécanismes de flexibilité nationaux. Il est composé de plusieurs briques applicatives :<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;• Une micro-application Habilitation pour gérer le droit d’accès.<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;• Une micro-application Portail Conseiller : portail utilisé en back office par les conseillers en relation avec les acteurs du marché.<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;• Une micro-application Portail Acteur du Marché : portail externe pour les acteurs.<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;• Les mécanismes d’ajustement, d’effacement et de service système sont embarqués dans la micro-application EASY.`
-      ,
+      context: 'Développement et TMA sur des projets pour le centre de service et missions de consulting chez Enedis.',
+      projectDescription: `
+      <strong>Pour le CNRS :</strong><br>
+      Développement d'une application de gestion des données relatives au personnel, aux fournisseurs, aux partenaires et à l’annuaire du CNRS.<br><br>
+      <strong>Pour le Centre de Service :</strong><br>
+      • Application de paiement pour FranceAgriMer, avec refonte de l’application de gestion des contrats d’achat de vin et d’autres produits agricoles (grains, olives, lait).<br>
+      • Sigebel : gestion des licences et des comptes utilisateurs pour la DGAC.<br>
+      • Previas et Bqa : systèmes de prévention des infections nosocomiales et rapports quotidiens pour Santé Publique France.<br><br>
+      <strong>Pour Enedis :</strong><br>
+      Projet Sikapa pour la gestion des acteurs du marché de l’énergie et des mécanismes de flexibilité nationaux :
+      <ul>
+        <li>Micro-application d'Habilitation pour la gestion des droits d'accès</li>
+        <li>Portail Conseiller pour l'assistance des acteurs du marché</li>
+        <li>Portail Acteur du Marché pour les clients externes</li>
+        <li>Modules d’ajustement et de services systèmes intégrés dans EASY</li>
+      </ul>
+    `,
       tasks: [
-        '<u><trong>CNRS : Projet découpé en tickets (user stories)</u></trong>',
-        'Réalisation d\'une quinzaine de tickets de type BUG ou FEATURE',
-        'Tickets sur la correction de bugs, comme la gestion du contrôle de saisie dans les formulaires avec des triggers',
-        'Tickets sur l\'ajout de fonctionnalités, comme l’ajout d’une page ou d\'une fonction pour un groupe d\'utilisateurs',
-        '<u><trong>FranceAgrimer, DGAC, Santé publique France :</u></trong>',
-        'Analyse et correction de bugs et qualité de code',
-        'Migration d\'applications Java 7 vers Java 8',
-        'Refonte d\'applications Full stack',
-        'Mise en place de scripts SQL',
-        'Tierce maintenance applicative',
-        '<u><trong>Enedis :</u></trong>',
-        'Analyse d\'US, Grooming, rétrospectives, démo',
-        'Développement de tickets (correctifs ou évolutifs)',
-        'Tests unitaires, d\'intégration et fonctionnels',
-        'Revue de code avec des paires'
+        'Découpage des projets en tickets (user stories)',
+        'Correction de bugs et ajout de nouvelles fonctionnalités pour le CNRS',
+        'Refonte et migration des applications de Java 7 vers Java 8',
+        'Développement full-stack pour FranceAgriMer, DGAC, Santé Publique France',
+        'Réalisation de tests unitaires, d’intégration et de tests de non-régression',
+        'Participation aux cérémonies Agile : Grooming, Rétrospectives, Démos'
       ],
       tools: [
-        'Java','Spring','Spring boot',' Angular', 'Aws', 'Junit5', 'Mockito', 'PostGreSQL',
-        'Liquibase','Hibernate', 'Jira software', 'SonarQube', 'Jenkins', 'JHipster', 'Ebx',
-        'Tomcat', 'Maven', 'Mantis', 'Xray', 'Git','GitHub/GitLab'
+        'Java', 'Spring', 'Spring Boot', 'Angular', 'AWS', 'JUnit5', 'Mockito',
+        'PostgreSQL', 'Liquibase', 'Hibernate', 'Jira', 'SonarQube', 'Jenkins',
+        'JHipster', 'EBX', 'Tomcat', 'Maven', 'Git', 'GitHub', 'GitLab'
       ]
     },
     {
@@ -216,17 +211,17 @@ export class MainComponent{
       endDate: '2021',
       type: 'Alternance',
       logo: 'assets/img/axians.png',
-      context: 'Développement d\'une application de gestion de plannings',
+      context: 'Développement d\'une application de gestion de plannings pour les employés.',
       projectDescription: `
-    Au sein du service technique, en charge du développement d'une
-    nouvelle application from scratch de gestion des plannings des employés
-  `,
+      Intégré au service technique, développement d'une application from scratch pour la gestion des plannings des employés,
+      avec une mise en production réussie et une utilisation quotidienne par le personnel.
+    `,
       tasks: [
-        '<strong>Spécifications</strong> : Analyse des besoins et de l’existant, Choix des outils, mise en place de l’architecture',
-        '<strong>Développement</strong> : Réalisation d\'une maquette, Implémentation de l’API REST, implémentation de l’interface utilisateur',
-        '<strong>Tests et mise en production</strong> : Mise en place des Tests fonctionnels, mise en production sur une machine virtuelle interne',
-        '<strong>Livrables/Résultats</strong> : Application mise en production et fonctionnelle, utilisée quotidiennement par les employés.',
-        'Satisfaction du chef d\'entreprise et des utilisateurs.'
+        'Analyse des besoins et mise en place de l’architecture du projet',
+        'Réalisation des maquettes avec Balsamiq',
+        'Développement de l’API REST et de l’interface utilisateur en Angular',
+        'Mise en place de tests fonctionnels et unitaires',
+        'Déploiement sur une machine virtuelle interne'
       ],
       tools: [
         'Spring Boot', 'MySQL', 'PostgreSQL', 'Maven', 'Hibernate', 'Angular',
@@ -235,51 +230,50 @@ export class MainComponent{
     },
     {
       id: 'experience_4',
-      title: 'Développeur java/J2EE',
-      company: 'Laboratoire LAPLACE, plasma et conversion d\'énergie',
+      title: 'Développeur Java/J2EE',
+      company: 'Laboratoire LAPLACE',
       location: 'Hybride',
       startDate: 'Mai 2020',
       endDate: 'Août 2020',
       type: 'Stage',
       logo: 'assets/img/laplace_1.png',
-      context: 'Développement et amélioration d\'applications Java EE',
+      context: 'Développement et maintenance évolutive d\'applications Java EE.',
       projectDescription: `
-        Au sein du service informatique, en charge du développement de plusieurs fonctionalités d'évolution et de
-        correctifs de bugs sur l'application de gestion des commandes passées par le laboratoire
-      `,
+      Au sein du service informatique, en charge de l'amélioration d'une application de gestion des commandes pour le laboratoire.
+    `,
       tasks: [
-        '<strong>Spécifications</strong> : Analyse des besoins et de l’existant',
-        '<strong>Gestion git</strong> : Fusion de deux anciens projets avec des historiques différents',
-        '<strong>Développement</strong> : tickets correctifs et évolutifs',
-        '<strong>Tests et mise en production</strong> : Mise en place des Tests fonctionnels'
+        'Analyse des besoins existants',
+        'Fusion de deux projets Git avec historiques différents',
+        'Développement de correctifs et évolutions',
+        'Mise en place de tests fonctionnels pour validation'
       ],
       tools: [
-        'J2EE', 'Spring MyBatis', 'Camunda BPMN', 'Git/GitHub', 'Ldap'
+        'J2EE', 'Spring MyBatis', 'Camunda BPMN', 'Git', 'LDAP'
       ]
     },
     {
       id: 'experience_5',
-      title: 'Technicien réseau',
+      title: 'Technicien Réseau',
       company: 'Cellcom Guinée',
-      location: 'En présentiel ( Conakry )',
-      startDate: 'février 2016',
-      endDate: 'octobre 2017',
+      location: 'Présentiel (Conakry)',
+      startDate: 'Février 2016',
+      endDate: 'Octobre 2017',
       type: 'CDD puis CDI',
       logo: 'assets/img/cellcom_1.jpg',
-      context: 'Supervision du réseau',
+      context: 'Supervision et maintenance du réseau informatique et télécom.',
       projectDescription: `
-        Au sein du NOC( network operation center) , supervision du réseau informatique et télécom sur l'ensemble du territoire
-        Guinéen.
-      `,
+      Intégré au NOC (Network Operation Center), en charge de la supervision du réseau sur tout le territoire guinéen.
+    `,
       tasks: [
-        'Monitoring des écrans',
-        'Analyse des alarmes et agissement en conséquence',
-        'Coordination des interventions sur les sites avec les agents de terrain',
-        'Rédaction de rapports'
+        'Surveillance en temps réel du réseau',
+        'Analyse et résolution des alarmes réseau',
+        'Coordination des interventions terrain',
+        'Rédaction de rapports quotidiens'
       ],
       tools: [
-        ' RBS', 'Routeurs', 'Excel 2007', 'word 2007', 'Cacti'
+        'RBS', 'Routeurs', 'Excel', 'Word', 'Cacti'
       ]
     }
   ];
+
 }

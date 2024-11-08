@@ -6,7 +6,7 @@
   <div class="row gy-4">
     <div class="col-lg-4 col-sm-6" *ngFor="let study of studies">
       <div class="blog-post">
-        <div class="blog-post-img">
+        <div class="blog-post-img bloc">
           <a class="px_modal" data-bs-toggle="modal" [attr.data-bs-target]="study.modalTarget">
             <img [src]="study.image" title="" alt="">
           </a>
@@ -15,7 +15,7 @@
           <h6>{{ study.year }}</h6>
           <h2>
             <a class="px_modal" data-bs-toggle="modal" [attr.data-bs-target]="study.modalTarget">
-              {{ study.title }}
+              {{ study.title }} <i class="bi-arrow-up-right"></i>
             </a>
           </h2>
         </div>

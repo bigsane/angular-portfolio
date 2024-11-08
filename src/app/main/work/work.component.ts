@@ -50,7 +50,7 @@ export class WorkComponent {
       lightboxTitle: 'Caption for image 6'
     },
     {
-      imgSrc: 'assets/img/pharmacie.jpg',
+      imgSrc: 'assets/img/pharma.jpg',
       modalTarget: '#work_7',
       date: '2014',
       title: 'Application de gestion d\'une pharmacie',

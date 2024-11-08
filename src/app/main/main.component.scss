@@ -11,8 +11,8 @@
 
 .single-blog-img img {
   width: 100%;
-  height: auto;
-  margin-bottom: 15px;
+  object-fit: contain;
+  margin-bottom: 5px;
 }
 
 #sbc {
@@ -20,19 +20,6 @@
   gap: 20px;
 }
 
-/* Largeur et overflow des colonnes */
-.left-column {
-  width: 25%;
-  padding-right: 10px;
-}
-
-.right-column {
-  width: 75%;
-  padding-left: 10px;
-  overflow-wrap: break-word; /* Evite le débordement de texte */
-  word-wrap: break-word;
-  hyphens: auto; /* Coupe les mots longs pour les navigateurs modernes */
-}
 
 .company-logo {
   width: 100%;
@@ -45,8 +32,86 @@
   font-weight: bold;
 }
 
-.modal-lg-custom {
-  max-width: 80% !important; /* Modifie la largeur du modal */
+
+
+/* Style général pour les blocs */
+.styled-box {
+  border: 1px dotted #ecf0f1;
+  border-radius: 10px;
+  background-color: #4d5154;
+  color: #ecf0f1;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Style commun pour les titres */
+.styled-box h2,
+.styled-box h3,
+.styled-box h4 {
+  color: #3498db; /* Bleu clair */
+}
+
+.styled-box h6 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #f39c12; /* Jaune-orangé */
+}
+
+/* Style pour les badges */
+.badge {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Blocs séparés avec des couleurs de fond différentes */
+.experience-box {
+  background-color: #5c636a;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+/* Style des sections du projet */
+.project-box {
+  background-color: #4d5154;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* Liste des tâches */
+.tasks-list {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.tasks-list li {
+  margin-bottom: 8px;
+  color: #ecf0f1; /* Blanc cassé */
+}
+
+/* Outils utilisés */
+.tools {
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px solid #7f8c8d;
+}
+
+.tools h4 {
+  color: #1abc9c; /* Vert clair */
+}
+
+.tools p {
+  font-style: italic;
+  color: #2ecc71; /* Vert vif */
 }
 
 
+/* Version mobile */
+@media (max-width: 767px) {
+  .modal-lg-custom {
+    max-width: 95% !important; /* Augmente la largeur à 95% pour les petits écrans */
+    margin: 0 auto; /* Centrer le modal */
+  }
+}
