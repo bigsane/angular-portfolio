@@ -11,7 +11,7 @@ export class AboutComponent {
   location = 'Ile-De-France, France';
   phone = '+33 677654238';
   email = 'bigsane25@gmail.com';
-  cvLink = 'assets/Files/cv_2024.pdf';
+  cvLink = 'assets/Files/CV-Abdourahimi-SANE.pdf';
   experienceYears = 4;
   bio = `Développeur full stack passionné, avec ${this.experienceYears} ans d'expériences dans la création
           d'applications web complexes en Java et Angular. Titulaire d'un master en développement logiciel,
