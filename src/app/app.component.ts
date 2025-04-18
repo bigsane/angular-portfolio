@@ -1,17 +1,23 @@
-import { Component, OnInit, HostListener, AfterViewInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { fromEvent, Subscription } from 'rxjs';
 
 import { throttleTime} from 'rxjs/operators';
-import { ScrollSpyService } from 'ng-spy';
+
+import { CommonModule } from '@angular/common';
+import { HeaderComponent } from './header/header.component';
+import { MainComponent } from './main/main.component';
+
 @Component({
   selector: 'app-root',
+  standalone: true,
+  imports: [CommonModule, HeaderComponent, MainComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit, AfterViewInit{
+export class AppComponent implements OnInit, OnDestroy {
   public fixedHeader: boolean = false;
   private windowScroll$: Subscription = Subscription.EMPTY;
-  constructor(private spyService: ScrollSpyService){}
+  constructor() {}
   
   ngOnInit() {
     this.windowScroll$ = fromEvent(window, 'scroll')
@@ -19,9 +25,6 @@ export class AppComponent implements OnInit, AfterViewInit{
       .subscribe(() => this.onScroll());
   }
 
-  ngAfterViewInit() {
-    this.spyService.spy({ thresholdBottom: 50 });
-  }
 
   ngOnDestroy() {
     this.windowScroll$.unsubscribe();

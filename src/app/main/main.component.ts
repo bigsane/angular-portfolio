@@ -1,7 +1,24 @@
-import { Component} from '@angular/core';
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { WorkComponent } from './work/work.component';
+import { ContactComponent } from './contact/contact.component';
+import { StudiesComponent } from './services/studies.component';
 
 @Component({
   selector: 'app-main',
+  standalone: true,
+  imports: [
+    CommonModule,
+    HomeComponent,
+    AboutComponent,
+    StudiesComponent,
+    ExperienceComponent,
+    WorkComponent,
+    ContactComponent
+  ],
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.scss']
 })

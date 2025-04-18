@@ -19,18 +19,16 @@ Primary use:    pxdraft
 11. Contact Us
 
 -------------------------------------------------------------------*/
-@import "assets/vendor/bootstrap/icons/bootstrap-icons.css";
-@import "assets/vendor/font-awesome/css/all.min.css";
 
+@use "assets/scss/variable" as *;
+@use "assets/scss/mixin" as *;
+@use "assets/scss/root" as *;
+@use "assets/scss/header" as *;
+@use "assets/scss/footer" as *;
+@use "assets/scss/button" as *;
+@use "assets/scss/color" as *;
+@use "assets/scss/base" as *;
+@use "assets/scss/style" as *;
 
-
-@import "assets/scss/variable";
-@import "assets/scss/mixin";
-@import "assets/scss/root";
-@import "assets/scss/header";
-@import "assets/scss/footer";
-@import "assets/scss/button";
-@import "assets/scss/color";
-@import "assets/scss/base";
-@import "assets/scss/style";
-
+@import "node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import "node_modules/@fortawesome/fontawesome-free/css/all.min.css";

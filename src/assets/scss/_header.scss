@@ -1,3 +1,5 @@
+@use "./mixin" as *;
+
 .logo-light {
 	display: none;
 	[data-bs-theme="dark"] & {
